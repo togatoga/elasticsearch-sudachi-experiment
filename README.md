@@ -1,0 +1,1 @@
+# elasticsearch-sudachi-synonym-issue
