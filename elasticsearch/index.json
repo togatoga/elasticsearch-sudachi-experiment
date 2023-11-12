@@ -8,7 +8,6 @@
           "discard_punctuation": true,
           "filter": [
             "sudachi_pos_filter",
-            "sudachi_normalizedform",
             "synonym_filter"
             ]
         }
@@ -42,18 +41,6 @@
               "空白"
             ]
           }
-      }
-    }
-  },
-  "mappings": {
-    "dynamic": "strict",
-    "properties": {
-      "id": {
-        "type": "long",
-        "index": true
-      },
-      "body": {
-        "type": "text"
       }
     }
   }
