@@ -1,4 +1,4 @@
-# elasticsearch-sudachi-synonym-issue
+# elasticsearch-sudachi-experiment
 
 ## Setup
 
