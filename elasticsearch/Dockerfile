@@ -12,4 +12,6 @@ ARG STACK_VERSION=${STACK_VERSION}
 
 COPY --from=builder /home/sudachi-dictionary-20230927/system_core.dic /usr/share/elasticsearch/config/sudachi/system_core.dic
 
-RUN bin/elasticsearch-plugin install https://github.com/WorksApplications/elasticsearch-sudachi/releases/download/v3.1.0/elasticsearch-${STACK_VERSION}-analysis-sudachi-3.1.0.zip
+RUN bin/elasticsearch-plugin install https://github.com/WorksApplications/elasticsearch-sudachi/releases/download/v3.1.0/elasticsearch-${STACK_VERSION}-analysis-sudachi-3.1.0.zip && \
+    bin/elasticsearch-plugin install analysis-kuromoji && \
+    bin/elasticsearch-plugin install analysis-icu
